@@ -1,0 +1,43 @@
+.b-ispstore__wrapper {
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.b-ispstore__wrapper * {
+	font-size: 16px;
+}
+
+.b-radio__control-wr {
+	vertical-align: middle;
+}
+
+.b-label__visible {
+	bottom: -7px;
+}
+
+.l-form__table .l-form__col {
+//	vertical-align: middle;
+}
+
+.b-input_for_slider {
+	height: 16px;
+	line-height: 16px;
+	width: 50px;
+}
+
+.l-form__row_type_slider .l-form__control-wr {
+	border-radius: 20px;
+}
+
+.b-input {
+	line-height: 16px;
+}
+
+.b-required-star {
+	font-size: 25px;
+	bottom: -18px;
+}
+
+.strength-pass-text * {
+	font-size: 12px;
+}

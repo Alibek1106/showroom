@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>BILLmanager</title>
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<link href="css/style.css" rel="stylesheet">
+</head>
+	<body>
+			<nav class="tpl-user-menu navbar navbar-default navbar-fixed-top">
+	<div class="container">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="tpl-user-menu__item">
+					<a href="basket.html" class="tpl-user-menu__link_without_padding">
+						<span class="tpl-user-menu__link tpl-user-menu__link_basket tpl-user-menu__link_like_link" id="basket"></span>
+						<div class="tpl-user-menu__icon">
+							<img src="images/icon_cart.png">
+						</div>
+					</a>
+				</li>
+				<li class="tpl-user-menu__item">
+					<a href="#" class="tpl-user-menu__link tpl-user-menu__link_auth" id="usermenu" data-toggle="dropdown" style="padding-top: 0; padding-bottom: 0px; display:flex; align-items: center">
+						<span>Личный кабинет</span>
+
+						<span class="caret"></span>
+						<div style="margin-left: 10px;" class="tpl-user-menu__icon">
+							<img src="images/icon_user.png">
+						</div>
+					</a>
+
+					<ul class="dropdown-menu dropdown-menu__usermenu">
+						<li class="dropdown-menu__list-item_for_guest"><a href="#" class="dropdown-menu__item dropdown-menu__item_is_login" data-toggle="modal" data-target="#login">Войти</a></li>
+						<li class="dropdown-menu__list-item_for_guest"><a href="#" class="dropdown-menu__item dropdown-menu__item_is_register" data-toggle="modal" data-target="#register">Регистрация</a></li>
+						<li class="dropdown-menu__list-item_for_guest"><a href="#" class="dropdown-menu__item dropdown-menu__item_is_enter" id="button-billing-guest">Перейти в биллинг</a></li>
+						<li class="dropdown-menu__list-item_for_user" style="display: none;"><a href="#" class="dropdown-menu__item dropdown-menu__item_is_enter" id="button-billing">Перейти в биллинг</a></li>
+						<li class="dropdown-menu__list-item_for_user" style="display: none;"><a href="#" class="dropdown-menu__item dropdown-menu__item_is_exit" id="button-logout">Выход</a></li>
+					</ul>
+				</li>
+			</ul>
+	</div>
+</nav>
+			<nav class="tpl-menu navbar navbar-default navbar-static-top">
+
+					<ul class="nav nav-justified">
+						
+							
+							
+							
+								
+								
+								
+									<li class="tpl-menu__item active">
+										<a href="vds.html" class="tpl-menu__link"><span>Виртуальный сервер</span></a>
+										<div class="tpl-bottom-line"></div>
+									</li>
+							
+								
+								
+								
+									<li class="tpl-menu__item">
+										<a href="vhost.html" class="tpl-menu__link"><span>Виртуальный хостинг</span></a>
+										<div class="tpl-bottom-line"></div>
+									</li>
+							
+								
+								
+								
+									<li class="tpl-menu__item">
+										<a href="storage.html" class="tpl-menu__link"><span>Внешнее FTP хранилище</span></a>
+										<div class="tpl-bottom-line"></div>
+									</li>
+							
+								
+								
+								
+									<li class="tpl-menu__item">
+										<a href="certificate.html" class="tpl-menu__link"><span>SSL сертификат</span></a>
+										<div class="tpl-bottom-line"></div>
+									</li>
+							
+							
+						
+						<li class="tpl-menu__item">
+							<a href="company.html" class="tpl-menu__link"><span>Компания</span></a>
+							<div class="tpl-bottom-line"></div>
+						</li>
+					</ul>
+
+</nav>
+			<div class="tpl-header__title container-fluid">
+				<div class="container">
+					<h1 class="tpl-header__h1">Профессиональный хостинг</h1>
+				</div>
+			</div>
+		</div>
+		<div class="tpl-content container">
+			<div class="tpl-billmanager-frame">
+				<script src="https://bill.nsp.kg/manimg/orion/billmgrStore.init.js"></script>
+				<script type="text/javascript">billmgrStore.init({
+				  host: 'https://bill.nsp.kg',
+				  startform: 'func=showroom.redirect&redirect_to=vds.order&lang=ru',
+				  basket: { blockId: 'basket' },
+				  usermenu: { blockId:  'usermenu' },
+				  custom_css: 'https://bill.nsp.kg/manimg/showroom/1/css/custom.css' });</script>
+				<noscript>Вам нужно включить JavaScript!</noscript>
+			</div>
+			<div>
+	<h1>Преимущества <span class="tpl-content__name">"NSP"</span></h1>
+</div>
+<div class="tpl-advantage row">
+	<div class="col-md-4">
+		<div class="tpl-advantage__image tpl-advantage__image_quality"></div>
+		<h3>Высокое<br>качество</h3>
+		<div class="tpl-advantage__text">Ваш проект будет работать всегда стабильно благодаря высокому уровню качества нашего сервиса.</div>
+	</div>
+	<div class="col-md-4">
+		<div class="tpl-advantage__image tpl-advantage__image_equipment"></div>
+		<h3>Современное<br>оборудование</h3>
+		<div class="tpl-advantage__text">Самое современное серверное оборудование, расположенное в надеждом дата-центре.</div>
+	</div>
+	<div class="col-md-4">
+		<div class="tpl-advantage__image tpl-advantage__image_personnel"></div>
+		<h3>Квалифицированный<br>персонал</h3>
+		<div class="tpl-advantage__text">Быстро получите ответ на любой ваш вопрос от квалифицированных системых администраторов.</div>
+	</div>
+</div>
+			<div class="tpl-steps row">
+	<div class="col-md-4">
+		<h1>Шаг<br>заказа 1</h1>
+		<div class="tpl-steps__text">Выберите наболее подходящий тариф и нажмите кнопку "Заказать".</div>
+	</div>
+	<div class="col-md-4">
+		<h1>Шаг<br>заказа 2</h1>
+		<div class="tpl-steps__text">Вы будете перенаправлены в биллинг для осуществления безопасной оплаты</div>
+		<div class="tpl-steps__arrow"></div>
+	</div>
+	<div class="col-md-4">
+		<h1>Шаг<br>заказа 3</h1>
+		<div class="tpl-steps__text">Совершив оплату, вы получите на почту письмо с данными для доступа к услуге.</div>
+		<div class="tpl-steps__arrow"></div>
+	</div>
+</div>
+		</div>
+		<div class="tpl-footer container-fluid">
+	<div class="container">
+		<div class="tpl-footer__signature container-fluid pull-left">
+			<span>&copy; <span class="tpl-footer__year">2023</span> <span class="tpl-footer_name">NSP</span></span>
+		</div>
+		<div class="container-fluid pull-right">
+			<div class="collapse navbar-collapse">
+				<ul class="tpl-social-list">
+					<li class="tpl-social-list__item"><a href="#" class="tpl-social-list__link tpl-social-list__link_fb"></a></li>
+					<li class="tpl-social-list__item"><a href="#" class="tpl-social-list__link tpl-social-list__link_tw"></a></li>
+					<li class="tpl-social-list__item"><a href="#" class="tpl-social-list__link tpl-social-list__link_vk"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal login -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog b-modal" role="document">
+		<div class="modal-content b-modal__content">
+			<div class="modal-body b-modal__body">
+				<button type="button" class="close b-modal__close" data-dismiss="modal" aria-label="Close"></button>
+				<h4 class="modal-title b-modal__title" id="myModalLabel">Вход</h4>
+				<form id="form-login">
+					<div class="form-group b-form__error alert alert-danger">
+					</div>
+					<div class="form-group">
+						<input type="text" name="username" class="form-control b-modal__input" placeholder="Имя пользователя"/>
+						<input type="hidden" name="func" value="auth"/>
+						<input type="hidden" name="out" value="xjson"/>
+					</div>
+					<div class="form-group">
+						<input type="password" name="password" class="form-control b-modal__input" placeholder="Пароль"/>
+					</div>
+					<div class="form-group b-modal__btn-wrapper">
+						<button type="submit" class="btn btn-primary b-modal__btn" id="button-login">Войти</button>
+					</div>
+					<div class="text-center">
+						<a href="#" class="b-modal__link" data-dismiss="modal" data-toggle="modal" data-target="#register">Регистрация</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal register -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog b-modal" role="document">
+		<div class="modal-content b-modal__content">
+			<div class="modal-body b-modal__body">
+				<button type="button" class="close b-modal__close" data-dismiss="modal" aria-label="Close"></button>
+				<h4 class="modal-title b-modal__title" id="myModalLabel">Регистрация</h4>
+				<form id="form-register">
+					<div class="form-group b-form__error alert alert-danger">
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" class="form-control b-modal__input" placeholder="Email"/>
+						<input type="hidden" name="func" value="register"/>
+						<input type="hidden" name="out" value="xjson"/>
+						<input type="hidden" name="sok" value="ok"/>
+					</div>
+					<div class="form-group">
+						<input type="password" name="passwd" class="form-control b-modal__input" placeholder="Пароль"/>
+					</div>
+					<div class="form-group">
+						<input type="text" name="realname" class="form-control b-modal__input" placeholder="Имя"/>
+					</div>
+					<div class="form-group b-modal__btn-wrapper">
+            <button type="submit" class="btn btn-primary b-modal__btn" id="button-register">Зарегистрироваться</button>
+					</div>
+					<div class="text-center">
+            <a href="#" class="b-modal__link" data-dismiss="modal" data-toggle="modal" data-target="#login">У меня уже есть аккаунт</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Modal cookie -->
+<div class="modal fade" id="use_cookie" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialogcookie" role="document">
+    <div class="modal-content">
+      <div class="modal-body b-modal__body">
+        <button type="button" class="close b-modal__close" data-dismiss="modal" aria-label="Close"></button>
+        <h7 class="modal-title b-modal__titlecookie" id="myModalLabel">Мы используем cookie для наилучшего представления нашего сайта. При использовании данного сайта, Вы подтверждаете свое согласие на использование файлов cookie в соответствии с настоящим уведомлением в отношении данного типа файлов.</h7>
+        <div class="form-group b-modal__btn-wrappercookie">
+          <button type="submit" class="btn btn-primary b-modal__btncookie" id="button-ok">Ок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/jquery.cookie.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
+<script type="text/javascript" src="https://bill.nsp.kg:3002/js/index.js"></script>
+<script type="text/javascript">
+	if (window.billChat) {
+		billChat.init({
+			project: 1,
+			lang: 'ru',
+			backgroundColor: '#99c21c',
+			borderColor: '#CCC',
+			baseUrl: 'https://bill.nsp.kg:3002/'
+		});
+	}
+</script>
+
+
+
+	</body>
+</html>
